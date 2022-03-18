@@ -24,7 +24,7 @@ bk-qq-login
 └── templates
     └── account
         ├── agreement.part      # 协议文件，无需关心
-        └── login_ce_qq.html
+        └── login_ce_qq.html    # 前端模板文件
 ```
 
 ## 部署
