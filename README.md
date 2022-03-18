@@ -49,6 +49,13 @@ REDIRECT_URI=''
 
 ```
 chmod +x ./deploy.sh
-./deploy.sh
+./deploy.sh  
 ```
  
+ 根据输出提示重启bk-paas-login.service 服务
+ ```
+ systemctl restart bk-paas-login.service
+ ```
+
+## 效果
+![qq登录](qq-login.png)
