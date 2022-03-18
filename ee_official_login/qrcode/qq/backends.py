@@ -39,7 +39,9 @@ class QQBackend(ModelBackend):
 
             # 获取User类
             UserModel = get_user_model()
-            ok, _, message, data = usermgr_get_user_v2(openid)
+
+            # 业务代码，不具有参考价值，业务本身在用户管理已经保存了用户的QQ和openid信息，qq oauth认证已经不允许开发者获取用户请求信息了，只能拿到openid信息，这里是通过openid拿到对应的用户信息
+            ok, _, message, data = usermgr_get_user_v2(openid) 
             logger.debug("data is {}".format(data))
             if ok:
                 # 获取User类
